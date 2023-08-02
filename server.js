@@ -9,8 +9,8 @@ const transporter = nodemailer.createTransport({
   port:  587, // Replace with the SMTP port
   secure: false,
   auth: {
-    user: "mohdkhan.mk09@gmail.com", // Replace with your email address
-    pass: "kexejujcfcbwcsrf", // Replace with your email password
+    user: "***********", // Replace with your email address
+    pass: "*********", // Replace with your email password
   },
 });
 
@@ -31,7 +31,7 @@ app.post('/send-message', (req, res) => {
   // Compose the email content
   const mailOptions = {
     from: email,
-    to: "mohdkhan.mk09@gmail.com", // Replace with your email address to receive the messages
+    to: "********", // Replace with your email address to receive the messages
     subject: `Contact Form Submission - ${subject}`,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
